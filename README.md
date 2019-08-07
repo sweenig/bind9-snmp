@@ -10,3 +10,14 @@ Tip: 98.105.110.100 corresponds to ASCII characters "b.i.n.d". The "4" that prec
 
 The two scripts here must be copied into /etc/snmp/scripts/.
 runstats.sh deletes the existing file, asks BIND9 to regenerate the statistics file, then pipes that file into dnsstats.pl, which parses the file into comma separated key value pairs.  That string of key value pairs is then returned to snmpd which returns it as the response to the SnmpGet command.
+
+Some resources used in developing this:
+- https://www.packetmischief.ca/monitoring-bind9/
+- http://www.net-snmp.org/docs/man/snmpd.conf.html
+- https://geekpeek.net/extend-snmp-run-bash-scripts-via-snmp/
+- https://www.maketecheasier.com/add-remove-user-to-groups-in-ubuntu/
+- https://www.youtube.com/watch?v=SATEOZwjw4U
+- http://www.whiteboardcoder.com/2017/11/install-and-setup-bind9-server-on.html
+<br /><a href="http://www.youtube.com/watch?feature=player_embedded&v=SATEOZwjw4U
+" target="_blank"><img src="http://img.youtube.com/vi/SATEOZwjw4U/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
