@@ -1,5 +1,4 @@
 # Polling BIND9 DNS Statistics via SNMP
-Scripts to monitor BIND9 DNS server via SNMP
 Execution by root of `rndc stats` on the DNS server must create the output file at /var/cache/bind/named.stats.  This allows the statistics to be output by BIND9.
 
 The line:
